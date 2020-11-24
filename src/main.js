@@ -20,6 +20,15 @@ import './utils/error-log' // error log
 
 import * as filters from './filters' // global filters
 
+import './plugins/element.js'
+import './plugins/vcharts'
+import Echarts from 'echarts'
+import VueEcharts from 'vue-echarts'
+import VCharts from 'v-charts'
+
+// import './style/index.css' //全局样式，样式有层叠关系，放置最后
+import 'v-charts/lib/style.css'
+
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -32,6 +41,10 @@ if (process.env.NODE_ENV === 'production') {
   const { mockXHR } = require('../mock')
   mockXHR()
 }
+
+Vue.prototype.$echarts = Echarts
+Vue.component('v-chart', VueEcharts)
+Vue.use(VCharts)
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium', // set element-ui default size
