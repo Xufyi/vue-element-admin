@@ -8,8 +8,6 @@ import Element from 'element-ui'
 import './styles/element-variables.scss'
 import enLang from 'element-ui/lib/locale/lang/en'// 如果使用中文语言包请默认支持，无需额外引入，请删除该依赖
 
-import '@/styles/index.scss' // global css
-
 import App from './App'
 import store from './store'
 import router from './router'
@@ -26,8 +24,8 @@ import Echarts from 'echarts'
 import VueEcharts from 'vue-echarts'
 import VCharts from 'v-charts'
 
-// import './style/index.css' //全局样式，样式有层叠关系，放置最后
 import 'v-charts/lib/style.css'
+import '@/styles/index.scss' // global css 全局样式，样式有层叠关系，放置最后
 
 /**
  * If you don't want to use mock-server

@@ -40,7 +40,6 @@
           </div>
         </div>
       </div>
-
     </el-card>
   </div>
 </template>
@@ -232,6 +231,7 @@ export default {
             border-radius: 50%;
             width: 20px;
             height: 20px;
+            line-height: 20px;
           }
         }
         .item_name {
