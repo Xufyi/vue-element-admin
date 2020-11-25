@@ -1,3 +1,13 @@
+项目简介：
+-----
+该项目基于vue-element-admin，将首页改为数据报表页面
+
+项目预览：
+-----
+https://xufyi.github.io/vue-element-admin/dist/
+
+
+
 <p align="center">
   <img width="320" src="https://wpimg.wallstcn.com/ecc53a42-d79b-42e2-8852-5126b810a4c8.svg">
 </p>
